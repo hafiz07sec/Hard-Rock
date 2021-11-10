@@ -45,7 +45,7 @@ const getLyric = async(artist, title) =>{
         const data = await res.json();
         displayLyrics(data.lyrics); 
     } catch (error) {
-        displayErrorMessage('Something went wrong. Please try again later!!!');
+        displayErrorMessage('Sorry! Failed to load lyrics, Please try again later!!!');
     }
 }
 
